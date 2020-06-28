@@ -1,6 +1,3 @@
-import netscape.javascript.JSObject;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +14,6 @@ public class App {
     }
 
     public String bestCharge(List<String> inputs) {
-        //TODO: write code here
         List<Item> allItem = this.itemRepository.findAll();
         List<SalesPromotion> allPromotion = this.salesPromotionRepository.findAll();
         SelectNum selectNum = new SelectNum();
@@ -77,7 +73,7 @@ public class App {
                 "===================================";
 
 
-        //System.out.println(output);
+        System.out.println(output);
         return output;
     }
     class SelectNum{
